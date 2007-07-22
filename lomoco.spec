@@ -12,6 +12,7 @@ Group:          System/Configuration/Hardware
 URL:            http://lomoco.linux-gamers.net/
 Source0:        http://lomoco.linux-gamers.net/files/lomoco-%{svn_rev}.tar.bz2
 BuildRequires:  chrpath
+BuildRequires:  cmake
 BuildRequires:  doxygen
 BuildRequires:  graphviz
 BuildRequires:  libusb-devel
