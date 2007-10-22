@@ -1,11 +1,11 @@
-%define svn_rev r131
+%define svn_rev r133
 
 %define libname %mklibname lomoco 0
-%define libnamed %mklibname lomoco 0 -d
+%define libnamed %mklibname lomoco -d
 
 Name:           lomoco
 Version:        1.0
-Release:        %mkrel 3
+Release:        %mkrel 4
 Summary:        Logitech mouse control tool
 License:        GPL
 Group:          System/Configuration/Hardware
@@ -65,6 +65,7 @@ linked with lomoco.
 Summary:        Development files for lomoco
 Group:          Development/C
 Requires:       %{libname} = %{version}-%{release}
+Obsoletes:      %{mklibname lomoco 0 -d} < %{version}-%{release}
 Provides:       %{name}-devel = %{version}-%{release}
 
 %description -n %{libnamed}
@@ -72,7 +73,7 @@ This package contains the files needed to develop programs
 linked with lomoco.
 
 %prep
-%setup -q -n lomoco
+%setup -q -n lomoco-trunk
 %{__rm} -r build
 
 %build
