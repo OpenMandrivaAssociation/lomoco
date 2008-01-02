@@ -16,6 +16,7 @@ BuildRequires:  cmake
 BuildRequires:  doxygen
 BuildRequires:  graphviz
 BuildRequires:  libusb-devel
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 Lomoco can configure vendor-specific options on Logitech USB mice (or
