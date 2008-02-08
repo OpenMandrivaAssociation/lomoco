@@ -5,12 +5,12 @@
 
 Name:           lomoco
 Version:        1.0
-Release:        %mkrel 4
+Release:        %mkrel 5
 Summary:        Logitech mouse control tool
 License:        GPL
 Group:          System/Configuration/Hardware
-URL:            http://lomoco.linux-gamers.net/
-Source0:        http://lomoco.linux-gamers.net/files/lomoco-%{svn_rev}.tar.bz2
+URL:            http://www.lomoco.org/
+Source0:        http://www.lomoco.org/lomoco-%{svn_rev}.tar.bz2
 BuildRequires:  chrpath
 BuildRequires:  cmake
 BuildRequires:  doxygen
