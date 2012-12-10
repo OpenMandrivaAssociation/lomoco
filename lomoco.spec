@@ -117,3 +117,51 @@ cd ..
 %doc build/doc/html/*
 %{_includedir}/*
 %attr(0755,root,root) %{_libdir}/*.so
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 1.0-10mdv2011.0
++ Revision: 620255
+- the mass rebuild of 2010.0 packages
+
+* Tue Sep 08 2009 Thierry Vignaud <tv@mandriva.org> 1.0-9mdv2010.0
++ Revision: 433629
+- rebuild
+
+* Mon Jul 28 2008 Thierry Vignaud <tv@mandriva.org> 1.0-7mdv2009.0
++ Revision: 251399
+- rebuild
+
+  + Pixel <pixel@mandriva.com>
+    - do not call ldconfig in %%post/%%postun, it is now handled by filetriggers
+
+* Fri Feb 08 2008 David Walluck <walluck@mandriva.org> 1.0-5mdv2008.1
++ Revision: 164318
+- update URL
+- remove old source tarball
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Mon Oct 22 2007 David Walluck <walluck@mandriva.org> 1.0-4mdv2008.1
++ Revision: 101271
+- update to SVN 133
+- new lib policy
+
+* Sun Jul 22 2007 David Walluck <walluck@mandriva.org> 1.0-3mdv2008.0
++ Revision: 54386
+- BuildRequires: cmake
+- SVN r131
+- Import lomoco
+
+
+
+* Sun Sep 03 2006 David Walluck <walluck@mandriva.org> 1.0-2mdv2007.0
+- rebuild
+- use /%%{_lib}/udev not /lib/udev
+
+* Wed Mar 1 2006 Austin Acton <austin@mandriva.org> 1.0-1mdk
+- initial package
