@@ -1,0 +1,12 @@
+diff -urN lomoco-trunk/lomoco/lomoco_config.c lomoco-trunk-patched/lomoco/lomoco_config.c
+--- lomoco-trunk/lomoco/lomoco_config.c	2007-07-16 19:46:35.000000000 +1100
++++ lomoco-trunk-patched/lomoco/lomoco_config.c	2014-03-17 23:17:44.784026023 +1100
+@@ -47,7 +47,7 @@
+   /* build the path to the config file */
+   snprintf(config_file, (size_t) PATH_MAX - 1, "%s/lomoco.ini", SYSCONFDIR);
+ #endif
+-  snprintf(config_file, (size_t) PATH_MAX - 1, "./lomoco.ini");
++  snprintf(config_file, (size_t) PATH_MAX - 1, "/etc/lomoco.ini");
+   LOMOCO_DEBUG(1, "Configuration file: %s", config_file);
+ 
+   /* Load ini file */
