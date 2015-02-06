@@ -7,7 +7,7 @@
 Summary:	Logitech mouse control tool
 Name:		lomoco
 Version:	1.0
-Release:	11
+Release:	12
 License:	GPLv2+
 Group:		System/Configuration/Hardware
 Url:		http://www.lomoco.org/
