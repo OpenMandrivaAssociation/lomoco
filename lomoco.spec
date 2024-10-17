@@ -10,7 +10,7 @@ Version:	1.0
 Release:	12
 License:	GPLv2+
 Group:		System/Configuration/Hardware
-Url:		http://www.lomoco.org/
+Url:		https://www.lomoco.org/
 Source0:	http://www.lomoco.org/lomoco-%{svn_rev}.tar.bz2
 Patch0:		lomoco-trunk-config.patch
 BuildRequires:	chrpath
